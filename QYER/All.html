@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script src="js/jquery.js"></script>
+		<link rel="stylesheet" href="ux_1475914992_694298/demo.css" />
+		<link rel="stylesheet" href="ux_1475914992_694298/iconfont.css" />
+		
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				width: 100%;
+			}
+			.all-first{
+				width: 100%;
+				height: 30px;
+				background-color: #323232;
+			}
+			.all-first-left{
+				height: 100%;
+				float: left;
+			}
+			.all-first-left li{
+				float: left;
+				font-size: 14px;
+				line-height: 30px;
+				font-weight: 900;
+				margin-right: 10px;
+				padding: 0 10px;
+			}
+			#zsjzyx{
+				line-height: none;
+				margin-top: -3px;
+			}
+			#zsjzyx img{
+				margin-left: 2px;
+			}
+			.all-first-left li a{
+				color: silver;
+			}
+			.all-first-left li img{
+				height: 18px;
+				margin: 6px 0px 0 20px;
+			}
+			.all-first-left li i{
+				font-weight: 100;
+			}
+			.all-first-left li a:hover{
+				text-decoration: none;
+				color: #10b041;
+			}
+			.all-first-right{
+				float: right;
+				color: silver;
+			}
+			.all-first-right li{
+				float: left;
+				font-size: 14px;
+				line-height: 30px;
+				font-weight: 400;
+				padding: 0 9px;
+			}
+			#dl{
+				margin-right: 20px;
+			}
+			#wb i{
+				font-size: 20px;
+				line-height: none;
+			}
+			#search{
+				margin-right: 5px;
+			}
+			span{
+				margin: 0 10px 0 5px;
+				font-weight: 100;
+			}
+			.S{
+            		padding-left: 31px;
+            		background: url("../le/search.png") no-repeat;
+            		background-position: 7px center;
+            		width: 35px;
+           		height: 20px;
+            		border: none;
+            		transition: all 1s;
+        		}
+			.all-first-left-sq{
+				width: 168px;
+				height: 100px;
+				position: absolute;
+				background-color: white;
+				margin-left: -15px;
+				padding-top: 5px;
+				color: #636363;
+				display: none;
+				border-radius: 3px;
+			}
+			.all-first-left-sq li{
+				width: 90%;	
+				line-height: 30px;
+			}
+			.all-first-left-sq li a{
+				display: block;
+				width: 100%;
+				color: #636363;
+				font-size: 18px;
+			}
+			.all-first-left-sq li i{
+				font-size: 23px;
+			}
+			.all-first-left-sq li a:hover{
+				background-color: rgba(0,0,0,0.2);
+			}
+			
+			.all-first-left-sq2{
+				width: 128px;
+				height: 165px;
+				position: absolute;
+				background-color: white;
+				margin-left: -15px;
+				padding-top: 5px;
+				color: #636363;
+				display: none;
+				border-radius: 3px;
+			}
+			.all-first-left-sq2 li{
+				width: 86%;	
+				line-height: 30px;
+			}
+			.all-first-left-sq2 li a{
+				display: block;
+				width: 100%;
+				color: #636363;
+				font-size: 18px;
+			}
+			.all-first-left-sq2 li i{
+				font-size: 15px;
+			}
+			.all-first-left-sq2 li a:hover{
+				background-color: rgba(0,0,0,0.2);
+			}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="all-first">
+			
+			<div class="all-first-left">
+				<ul>
+				
+				<li><a href="#"><img src="img/logo123.png"></a></li>
+				<li><a href="#">目的地</a></li>
+				<li><a href="#">锦囊</a></li>
+				<li><a href="#">行程助手</a></li>
+				<li id="sq"><a href="#">社区<i class="icon iconfont">&#xe600;</i></a>
+					<div class="all-first-left-sq">
+						<ul>
+							
+							<li><a>
+								<i class="icon iconfont">&#xe622;</i>
+								旅游论坛 > </a></li>
+							<li><a>
+								<i class="icon iconfont">&#xe61e;</i>
+								旅游问答</a></li>
+							<li><a>
+								<i class="icon iconfont">&#xe61f;</i>
+								旅游论坛</a></li>
+							
+						</ul>
+					</div>
+				</li>
+				<li id="zsjzyx"><a href="#">最世界·自由行</a><img src="img/gif.gif"></li>
+				<li><a href="#">机票</a></li>
+				<li><a href="#">酒店</a></li>
+				<li id="yd"><a href="#">预订<i class="icon iconfont">&#xe600;</i></a>
+					
+					<div class="all-first-left-sq2">
+						<ul>
+							
+							<li><a>
+								<i class="icon iconfont">&#xe700;</i>
+								特价酒店</a></li>
+							<li><a>
+								<i class="icon iconfont">&#xe6b2;</i>
+								保险</a></li>
+							<li><a>
+								<i class="icon iconfont">&#xe694;</i>
+								华人旅馆</a></li>
+								<li><a>
+								<i class="icon iconfont">&#xe673;</i>
+								邮轮</a></li>
+								<li><a>
+								<i class="icon iconfont">&#xe668;</i>
+								租车</a></li>
+							
+							
+						</ul>
+					</div>
+					
+				</li>
+				
+				</ul>
+			</div>
+			<div class="all-first-right">
+				<ul>
+					
+					<li id="search">
+						<input type="search" class="S" placeholder="search">
+						<i class="icon iconfont">&#xe650;</i>
+						<span>|</span>
+					</li>
+					<li><i class="icon iconfont">&#xe607;</i></li>
+					<li id="wb"><i class="icon iconfont">&#xe644;</i></li>
+					<li><i class="icon iconfont">&#xe643;</i></li>
+					<li>注册</li>
+					<li id="dl">登录</li>
+					
+				</ul>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
+<script>
+	
+	$("#search i").mouseenter(function(){
+		$("#search input[type=search]").css({
+				"width": "150px",
+            		"background-color": "white",
+            		"box-shadow": "1px 1px 1px #22aadd"
+		})
+	});
+
+		$("#search input[type=search]").mouseleave(function(){
+		
+		$("#search input[type=search]").css({
+				"width": "35px",
+            		"background-color": "#323232",
+            		"box-shadow": "none"
+			
+		})
+	});
+	$("#sq").mouseenter(function(){
+		$(".all-first-left-sq").toggle(100)
+	});
+	$("#sq").mouseleave(function(){
+		$(".all-first-left-sq").toggle(100)
+	});
+	$("#yd").mouseenter(function(){
+		$(".all-first-left-sq2").toggle(100)
+	});
+	$("#yd").mouseleave(function(){
+		$(".all-first-left-sq2").toggle(100)
+	});
+	
+</script>

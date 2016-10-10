@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/artTemplate.js"></script>
+		<link rel="stylesheet" href="ux_1475914992_694298/demo.css" />
+		<link rel="stylesheet" href="ux_1475914992_694298/iconfont.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		
+	</head>
+	<body>
+		
+		<nav>
+			
+			<div class="worldFreeGo">
+				
+				<div class="GoImg">
+					<img src="img/worldFreeGo.png" />
+				</div>
+				
+				<div class="world-nav">
+					<ul></ul>
+					<ul class="ulChange"></ul>
+					<ul class="ulChange"></ul>
+					<ul class="ulChange"></ul>
+					<ul class="ulChange"></ul>
+				</div>
+				<div class="world-navHover">
+					<ul>
+						<li class="world-navHover-li"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<a class="but">查看更多折扣</div>
+			</div>
+			
+		</nav>
+		
+		<footer></footer>
+		
+	</body>
+</html>
+<script id ="IndexWorldGo" type="text/html">
+	
+	<li><a href="{{url}}">
+		<div class="world-div">
+		<img src="{{imgsrc}}" />
+		<div class="title">
+			<div class="title2">{{title}}</div>
+			<span class="world-span1">{{tag}}</span>
+			<span class="world-span2">{{datetime}}</span>
+			<br>
+			<div class="world-two-span">
+				<span class="world-span3"></span></div>
+			</div>					
+		</div>
+	</li></a>
+	
+</script>
+<script>
+	
+$.ajax({
+	url: "js/indexWorldGo.json",
+	dataType: "json",
+	success: function(data) {
+		$.each(data, function(i, value) {
+			if(i<6){
+			$(template('IndexWorldGo', value))
+				.appendTo($(".world-nav ul:eq(0)"));
+			}
+			if(i>5&&i<12){
+			$(template('IndexWorldGo', value))
+				.appendTo($(".world-nav ul:eq(1)"));
+			}
+			if(i>11&&i<18){
+			$(template('IndexWorldGo', value))
+				.appendTo($(".world-nav ul:eq(2)"));
+			}
+			if(i>17&&i<24){
+			$(template('IndexWorldGo', value))
+				.appendTo($(".world-nav ul:eq(3)"));
+			}
+			if(i>23&&i<30){
+			$(template('IndexWorldGo', value))
+				.appendTo($(".world-nav ul:eq(4)"));
+			}
+		});
+	}
+});
+	
+	$(".world-navHover li").each(function(){
+		$(this).mouseenter(function(){
+			$(this).siblings().removeClass("world-navHover-li")
+			$(this).addClass("world-navHover-li")
+		})
+	})
+	
+	$(".world-navHover li:eq(0)").mouseenter(function(){
+		$(".world-nav ul:eq(0)").siblings().fadeOut(300);
+		$(".world-nav ul:eq(0)").fadeIn(300);
+	});
+	$(".world-navHover li:eq(1)").mouseenter(function(){
+		$(".world-nav ul:eq(1)").siblings().fadeOut(300);
+		$(".world-nav ul:eq(1)").fadeIn(300);
+	});
+	$(".world-navHover li:eq(2)").mouseenter(function(){
+		$(".world-nav ul:eq(2)").siblings().fadeOut(300);
+		$(".world-nav ul:eq(2)").fadeIn(300);
+	});
+	$(".world-navHover li:eq(3)").mouseenter(function(){
+		$(".world-nav ul:eq(3)").siblings().fadeOut(300);
+		$(".world-nav ul:eq(3)").fadeIn(300);
+	});
+	$(".world-navHover li:eq(4)").mouseenter(function(){
+		$(".world-nav ul:eq(4)").siblings().fadeOut(300);
+		$(".world-nav ul:eq(4)").fadeIn(300);
+	});
+	$(".world-navHover li:eq(5)").mouseenter(function(){
+		$(".world-nav ul:eq(5)").siblings().fadeOut(300);
+		$(".world-nav ul:eq(5)").fadeIn(300);
+	});
+	
+</script>
